@@ -1,0 +1,31 @@
+{
+   "AppDescription": {
+      "en": "Test your lyrical knowledge!" 
+   },
+   "AppIcon": {
+      "36x18": "tutorial.png"
+   },
+   "AppName": {
+      "en": "SpotifyLyricsQuiz"
+   },
+   "BundleIdentifier": "slq",
+   "BundleType": "Application",
+   "BundleVersion": "0.1.0",
+   "SupportedLanguages": [
+      "en"
+   ],
+   "DefaultTabs": [
+
+   ],
+   "Dependencies": {
+      "api": "0.1.0",
+      "resources": "0.1.0",
+      "util": "0.1.0"
+   },
+   "VendorIdentifier": "nl.boyd",
+   "RequiredPermissions": [
+      "http://api.musixmatch.com",
+      "http://api.epiclyrix.com",
+      "http://bbueno.com"
+   ]
+}

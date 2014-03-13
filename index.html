@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Something</title>
+   <link rel="stylesheet" href="sp://resources/css/eve.css">
+   <link rel="stylesheet" href="sp://resources/css/api.css">
+   <link rel="stylesheet" href="sp://resources/css/player.css">
+   <link rel="stylesheet" href="sp://resources/css/list.css">
+
+   <link rel="stylesheet" href="css/jquery.text-scroller.css">
+   <link rel="stylesheet" href="css/jquery.selecter.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <div class="header">
+      <div class="logo">
+         <h1>SLQ <small> SpotifyLyricsQuiz</small></h1>
+
+      </div>
+      <div class="quiz-mode block">
+         <h2>Quiz mode</h2>
+         <div class="iphone-toggle-buttons">
+            <ul>
+               <li><label for="quiz-mode"><input type="checkbox" name="quiz-mode" id="quiz-mode" /><span>Quiz-mode</span></label></li>
+            </ul>
+         </div>
+      </div>
+      <div class="scores block">
+         <h2>Score</h2>
+         <dl>
+            <dt class="correct">Correct: </dt>
+            <dd class="correct" id="correct-score">0</dd>
+            <dt class="wrong">Wrong: </dt>
+            <dd class="wrong" id="wrong-score">0</dd>
+         </dl>
+         <span class="score">0</span>
+      </div>
+      <div class="settings block">
+         <h2>Difficulty</h2>
+         <select name="difficulty" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="normal" selected>Normal</option>
+            <option value="hard">Hard</option>
+            <option value="insane">Insane</option>
+         </select>       
+      </div>
+   </div>
+
+   <div class="container">
+
+      <div class="text-scroller"> 
+         <ul id="lyricList">
+         
+         </ul>
+      </div>
+      
+   </div>
+
+   <div class="footer">
+      
+   </div>
+
+   <script src="js/plugins/jquery.min.js"></script>
+   <script src="js/plugins/jquery.text-scroller.js"></script>
+   <script src="js/plugins/jquery.selecter.js"></script>
+   <script src="js/plugins/underscore.min.js"></script>
+   <script src="js/plugins/backbone.min.js"></script>
+   <script src="js/SLQ/LyricLine.js"></script>
+   <script src="js/SLQ/View.js"></script>
+   <script src="js/SLQ/LyricsQuiz.js"></script>
+   <script src="js/SLQ/Spotify.js"></script>
+   <script src="js/SLQ/LyricsApi.js"></script>
+   <script src="js/SLQ/Runner.js"></script>
+   <script>
+      $("select").selecter();
+   </script>
+</body>
+</html>
